@@ -4,8 +4,8 @@ class HelloController {
 
 	def index() {
 		def list = Person.list()
-		def person = new Person(age:55)
 		def numberofRecodrds = Person.count()
+		def person = new Person()
 		[list:list, person: person, numberofRecodrds: numberofRecodrds]
 	}
 
