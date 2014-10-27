@@ -1,7 +1,16 @@
 package sample_controller
+import groovy.transform.InheritConstructors
 
-class Artist {
+@InheritConstructors
+class Artist extends Person {
 
-	static constraints = {
-	}
+	String style = new String()
+
+	//static hasMany = [works: Work]
+
+	/*static constraints = {
+	 }
+	 def String toString() {
+	 "($id: $name)"
+	 }*/
 }

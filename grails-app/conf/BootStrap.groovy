@@ -1,4 +1,5 @@
 import sample_controller.Person
+import sample_controller.Artist
 
 class BootStrap {
 
